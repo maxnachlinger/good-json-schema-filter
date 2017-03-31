@@ -1,0 +1,22 @@
+{
+  "name": "good-json-schema-filter",
+  "version": "0.0.1",
+  "description": "A Good log object transform stream which filters via json-schema",
+  "main": "lib/index.js",
+  "scripts": {
+    "pretest": "./node_modules/.bin/standard --verbose | ./node_modules/.bin/snazzy",
+    "test": "./node_modules/.bin/tape \"./tests/*.js\""
+  },
+  "author": "Max Nachlinger",
+  "license": "ISC",
+  "devDependencies": {
+    "snazzy": "6.0.0",
+    "standard": "9.0.2",
+    "tape": "4.6.3"
+  },
+  "dependencies": {
+    "djv": "1.0.0-beta.0",
+    "joi": "10.3.1",
+    "lodash": "4.17.4"
+  }
+}
