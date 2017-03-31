@@ -76,6 +76,6 @@ mockLogStream.push({type: 'this-will-be-passed-through', foo: 'bar', baz: 'bar'}
 ```
 This prints:
 ```javascript
-{"type":"filtered-type"}
+{"type":"filtered-type-omitted-keys"}
 {"type":"this-will-be-passed-through","foo":"bar","baz":"bar"}
 ```
