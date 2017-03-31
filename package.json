@@ -10,6 +10,7 @@
   "author": "Max Nachlinger",
   "license": "ISC",
   "devDependencies": {
+    "good-squeeze": "5.0.2",
     "snazzy": "6.0.0",
     "standard": "9.0.2",
     "tape": "4.6.3"
