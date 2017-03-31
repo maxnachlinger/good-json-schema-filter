@@ -16,3 +16,10 @@ A Good log object transform stream which filters via json-schema
 ```
 npm i good-json-schema-filter --save
 ```
+
+### What problem does this solve?
+This library allows you to omit keys or entire log objects matched via json-schema syntax.
+
+### Example
+
+
