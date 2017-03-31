@@ -3,6 +3,13 @@
   "version": "0.0.1",
   "description": "A Good log object transform stream which filters via json-schema",
   "main": "lib/index.js",
+  "keywords": [
+    "good",
+    "good-reporter",
+    "transform-stream",
+    "filtering",
+    "stream"
+  ],
   "scripts": {
     "pretest": "./node_modules/.bin/standard --verbose | ./node_modules/.bin/snazzy",
     "test": "./node_modules/.bin/tape \"./tests/*.js\""
