@@ -21,7 +21,6 @@ npm i good-json-schema-filter --save
 This library allows you to omit keys or entire log objects matched via json-schema syntax.
 
 ### Example
-Omitting keys
 ```javascript
 const Stream = require('stream')
 const SafeJson = require('good-squeeze').SafeJson
@@ -37,7 +36,7 @@ const transform = new GoodJsonSchemaFilter({
       test: {
         properties: {
           type: {
-            enum: ['filtered-type']
+            enum: ['filtered-type-omitted-keys']
           }
         },
         required: [
@@ -71,21 +70,9 @@ mockLogStream
   .pipe(new SafeJson())
   .pipe(process.stdout)
 
-mockLogStream.push({
-  type: 'this-will-not-make-it-through',
-  foo: 'bar',
-  bar: 'bar'
-})
-mockLogStream.push({
-  type: 'filtered-type',
-  foo: 'bar',
-  bar: 'bar'
-})
-mockLogStream.push({
-  type: 'this-will-be-passed-through',
-  foo: 'bar',
-  baz: 'bar'
-})
+mockLogStream.push({type: 'this-will-not-make-it-through', foo: 'bar', bar: 'bar'})
+mockLogStream.push({type: 'filtered-type-omitted-keys', foo: 'bar', bar: 'bar'})
+mockLogStream.push({type: 'this-will-be-passed-through', foo: 'bar', baz: 'bar'})
 ```
 This prints:
 ```javascript
