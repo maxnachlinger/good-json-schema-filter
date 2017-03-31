@@ -4,8 +4,7 @@ const test = require('tape')
 const GoodJsonSchemaFilter = require('../lib')
 
 const callLib = (rules, input, callback) => {
-  const lib = new GoodJsonSchemaFilter({rules})
-  return lib._transform(input, 'utf8', callback)
+  return new GoodJsonSchemaFilter({rules})._transform(input, 'utf8', callback)
 }
 
 const simpleSchema = {
