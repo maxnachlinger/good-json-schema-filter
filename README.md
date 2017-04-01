@@ -44,7 +44,8 @@ const transform = new GoodJsonSchemaFilter({
         ]
       },
       action: {
-        omitKeys: ['foo', 'bar']
+        // omit's the foo and bar property
+        omit: ['foo', 'bar']
       }
     }, {
       name: 'omit-log-object-example-rule',
@@ -59,6 +60,7 @@ const transform = new GoodJsonSchemaFilter({
         ]
       },
       action: {
+        // omits the entire object
         omit: true
       }
     }

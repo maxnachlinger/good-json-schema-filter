@@ -29,7 +29,7 @@ test('Omits keys from input on matched schemas', (t) => {
     name: 'test-0',
     test: simpleSchema,
     action: {
-      omitKeys: ['foo', 'bar']
+      omit: ['foo', 'bar']
     }
   }]
 
@@ -75,7 +75,7 @@ test('Passes input through on unmatched schemas', (t) => {
     name: 'test-0',
     test: simpleSchema,
     action: {
-      omitKeys: ['foo', 'bar']
+      omit: ['foo', 'bar']
     }
   }]
   callLib(rules, input, (err, result) => {

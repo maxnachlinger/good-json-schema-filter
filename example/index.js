@@ -22,7 +22,7 @@ const transform = new GoodJsonSchemaFilter({
         ]
       },
       action: {
-        omitKeys: ['foo', 'bar']
+        omit: ['foo', 'bar']
       }
     }, {
       name: 'omit-log-object-example-rule',

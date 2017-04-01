@@ -17,7 +17,7 @@ test('Creates a rule given valid input', (t) => {
       ]
     },
     action: {
-      omitKeys: ['foo', 'bar']
+      omit: ['foo', 'bar']
     }
   }]
 
