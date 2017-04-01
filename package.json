@@ -1,6 +1,6 @@
 {
   "name": "good-json-schema-filter",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A Good log object transform stream which filters via json-schema",
   "main": "lib/index.js",
   "keywords": [
